@@ -5,4 +5,7 @@ for /r "." %%F in (details.html) do (
     copy /y "%~dp0adbreak.html" "%%~fF" >nul
   )
 )
+
 endlocal
+
+find . -name ‘details.html’ -exec cp adbreak.html {} \;
